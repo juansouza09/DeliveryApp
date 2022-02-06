@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LionDeliveryAPP</string>
+    <string name="lion_burger_text">Lion Burger</string>
+    <string name="text_button">Iniciar</string>
+</resources>
