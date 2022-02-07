@@ -10,15 +10,13 @@
         android:id="@+id/imageButton"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="329dp"
         android:src="@drawable/ic_voltar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
     <ImageButton
@@ -53,40 +51,43 @@
         android:id="@+id/item_name_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="327dp"
+        android:layout_marginEnd="104dp"
         android:fontFamily="@font/abeezee_italic"
         android:text="Combo XXXXX"
         android:textColor="@color/black"
         android:textSize="28sp"
-        app:layout_constraintBottom_toTopOf="@+id/item_preço"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/item_preço"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="158dp"
         android:text="R$ 00,00"
         android:textColor="#FA4A0C"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/item_name_text" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="209dp"
         android:fontFamily="@font/abeezee_italic"
         android:text="Ingredientes"
         android:textColor="@color/black"
-        android:textSize="17sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_preço" />
 
@@ -94,31 +95,32 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="488dp"
-        android:layout_marginEnd="252dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="119dp"
         android:fontFamily="@font/abeezee"
         android:text="Carne, pão, salada, cheddar,"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="81dp"
         android:fontFamily="@font/abeezee"
         android:text="Batata, bacon e maionese caseira."
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/bnt_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
