@@ -17,6 +17,7 @@
         <entry key="..\:/Users/juuan/StudioProjects/AppDelivery/app/src/main/res/layout/tela_sem_internet.xml" value="0.358695652173913" />
         <entry key="..\:/Users/juuan/StudioProjects/AppDelivery/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3725" />
         <entry key="..\:/Users/juuan/StudioProjects/AppDelivery/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3725" />
+        <entry key="app/src/main/res/layout/dashboard_screen.xml" value="0.2" />
       </map>
     </option>
   </component>
@@ -25,5 +26,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>
