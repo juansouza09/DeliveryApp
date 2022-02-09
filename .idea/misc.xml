@@ -17,7 +17,18 @@
         <entry key="..\:/Users/juuan/StudioProjects/AppDelivery/app/src/main/res/layout/tela_sem_internet.xml" value="0.358695652173913" />
         <entry key="..\:/Users/juuan/StudioProjects/AppDelivery/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3725" />
         <entry key="..\:/Users/juuan/StudioProjects/AppDelivery/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3725" />
-        <entry key="app/src/main/res/layout/dashboard_screen.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/carrinho_item_view.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/dashboard_screen.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/item_view_detalhes.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/tela_cadastro.xml" value="0.15572916666666667" />
+        <entry key="app/src/main/res/layout/tela_carrinho.xml" value="0.2549019607843137" />
+        <entry key="app/src/main/res/layout/tela_carrinho_vazio.xml" value="0.15572916666666667" />
+        <entry key="app/src/main/res/layout/tela_historico_vazia.xml" value="0.15572916666666667" />
+        <entry key="app/src/main/res/layout/tela_login.xml" value="0.15572916666666667" />
+        <entry key="app/src/main/res/layout/tela_login_e_registro.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/tela_sem_busca.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/tela_sem_internet.xml" value="0.15572916666666667" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.15572916666666667" />
       </map>
     </option>
   </component>

@@ -6,31 +6,18 @@
     android:background="#F5F5F8"
     android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="329dp"
-        android:src="@drawable/ic_voltar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
-
     <TextView
         android:id="@+id/text_carrinho_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/abeezee_italic"
         android:gravity="center"
         android:text="Carrinho"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <ImageButton
         android:id="@+id/bnt_login"
@@ -61,13 +48,13 @@
         app:layout_constraintTop_toTopOf="@+id/bnt_login" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="395dp"
-        android:layout_height="667dp"
+        android:layout_width="374dp"
+        android:layout_height="570dp"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/bnt_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_carrinho_titulo" />
+        app:layout_constraintTop_toBottomOf="@id/text_carrinho_titulo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
