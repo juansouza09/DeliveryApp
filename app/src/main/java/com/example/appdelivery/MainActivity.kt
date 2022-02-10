@@ -6,7 +6,6 @@ import android.os.Bundle
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tela_sem_internet)
-
+        setContentView(R.layout.tela_login_and_cadastro)
     }
 }

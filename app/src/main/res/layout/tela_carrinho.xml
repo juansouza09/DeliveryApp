@@ -19,6 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/bnt_login"
         android:layout_width="324dp"
@@ -31,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/qtd_lanche"
@@ -50,7 +51,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="374dp"
         android:layout_height="570dp"
-        android:padding="10dp"
+        tools:listitem="@layout/carrinho_item_view"
         app:layout_constraintBottom_toTopOf="@+id/bnt_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
