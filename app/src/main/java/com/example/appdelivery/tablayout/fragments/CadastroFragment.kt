@@ -1,4 +1,4 @@
-package com.example.appdelivery.fragments
+package com.example.appdelivery.tablayout.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

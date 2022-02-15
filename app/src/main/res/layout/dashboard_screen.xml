@@ -7,29 +7,30 @@
     app:layout_constraintHorizontal_chainStyle="spread"
     android:background="#FF4B3A">
 
-
     <ImageView
         android:id="@+id/img_girl"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/button2"
+        app:layout_constraintBottom_toTopOf="@id/buttonDashboard"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/images"
-        tools:ignore="ImageContrastCheck, ContentDescription" />
+        tools:ignore="ImageContrastCheck, ContentDescription"
+        />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@drawable/lion_image"
+        android:src="@drawable/ic_lion"
         app:civ_border_color="@color/white"
         app:civ_border_width="2dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/textView"
@@ -44,11 +45,30 @@
         app:layout_constraintBottom_toTopOf="@+id/img_girl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee_italic"
+        android:shadowColor="#050505"
+        android:text="by Juan Pablo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/img_girl"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
-
-        android:id="@+id/button2"
+        android:id="@+id/buttonDashboard"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_marginStart="10dp"
@@ -56,17 +76,15 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/abeezee_italic"
-        android:text="Iniciar"
+        android:text="Bem-vindo"
         android:textAlignment="center"
         android:textColor="#FF460A"
         android:textSize="18sp"
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
+        app:layout_constraintTop_toBottomOf="@id/img_girl"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
