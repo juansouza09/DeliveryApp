@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#F5F5F8"
+    android:background="#F6F6F9"
     android:layout_height="match_parent">
 
     <ImageButton
         android:id="@+id/bnt_login"
-        android:layout_width="324dp"
+        android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/botaored"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/qtd_lanche"
+        android:id="@+id/text_btn_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/abeezee_italic"
@@ -32,22 +32,22 @@
         app:layout_constraintBottom_toBottomOf="@+id/bnt_login"
         app:layout_constraintEnd_toEndOf="@+id/bnt_login"
         app:layout_constraintStart_toStartOf="@+id/bnt_login"
-        app:layout_constraintTop_toTopOf="@+id/bnt_login" />
+        app:layout_constraintTop_toTopOf="@+id/bnt_login"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/item_name_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="327dp"
-        android:layout_marginEnd="104dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/abeezee_italic"
         android:text="Combo XXXXX"
         android:textColor="@color/black"
         android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@id/item_preço"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/img_burger" />
 
     <TextView
         android:id="@+id/item_preço"
@@ -58,6 +58,7 @@
         android:text="R$ 00,00"
         android:textColor="#FA4A0C"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_name_text" />
@@ -73,6 +74,7 @@
         android:text="Ingredientes"
         android:textColor="@color/black"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +90,7 @@
         android:fontFamily="@font/abeezee"
         android:text="Carne, pão, salada, cheddar,"
         android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +100,6 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginStart="81dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="81dp"
@@ -108,6 +110,27 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/img_burger"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/img_burger"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintEnd_toEndOf="@id/img_burger"
+        app:layout_constraintTop_toTopOf="@id/img_burger"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

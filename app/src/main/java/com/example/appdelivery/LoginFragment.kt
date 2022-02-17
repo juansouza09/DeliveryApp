@@ -7,7 +7,7 @@ import com.example.appdelivery.tablayout.adapter.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
-class LoginActivity : AppCompatActivity() {
+class LoginFragment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.tela_login_and_cadastro)

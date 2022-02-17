@@ -10,4 +10,5 @@
     <color name="gray">#656565</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_bg">#F2F2F2</color>
+    <color name="color_tab_item_home">#9A9A9D</color>
 </resources>

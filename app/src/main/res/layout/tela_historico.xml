@@ -6,18 +6,18 @@
     android:background="#F5F5F8"
     android:layout_height="match_parent">
 
+
     <TextView
         android:id="@+id/text_carrinho_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
         android:fontFamily="@font/abeezee_italic"
-        android:gravity="center"
-        android:text="Carrinho"
+        android:text="Histórico"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
@@ -32,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/text_btn_2"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/abeezee_italic"
         android:gravity="center"
-        android:text="Completar a compra"
+        android:text="Novo pedido"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/bnt_login"
@@ -49,13 +49,13 @@
         app:layout_constraintTop_toTopOf="@+id/bnt_login" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="374dp"
-        android:layout_height="570dp"
-        tools:listitem="@layout/carrinho_item_view"
-        app:layout_constraintBottom_toTopOf="@+id/bnt_login"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_carrinho_titulo" />
+        app:layout_constraintTop_toBottomOf="@id/text_carrinho_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bnt_login"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

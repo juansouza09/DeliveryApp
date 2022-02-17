@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/favoriteFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_heart"
+        android:title="Favoritos"/>
+    <item
+        android:id="@+id/userFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="Perfil"/>
+    <item
+        android:id="@+id/historicFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_historic"
+        android:title="Histórico"/>
+</menu>

@@ -3,7 +3,6 @@ package com.example.appdelivery
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun abrirLogin(){
-        val loginTela = Intent(this, LoginActivity::class.java)
+        val loginTela = Intent(this, LoginFragment::class.java)
         startActivity(loginTela)
+
     }
 }

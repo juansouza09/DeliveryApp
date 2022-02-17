@@ -8,26 +8,24 @@
 
     <ImageView
         android:id="@+id/retangulo"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008"
         app:srcCompat="@drawable/retangulo" />
 
     <ImageView
         android:id="@+id/img_lanche"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/retangulo"
-        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="@+id/retangulo"
         app:layout_constraintTop_toTopOf="@+id/retangulo"
-        app:layout_constraintVertical_bias="0.321"
-        app:srcCompat="@drawable/img_prato" />
+        app:srcCompat="@drawable/img_burger" />
 
     <TextView
         android:id="@+id/text_nome_lanche"
@@ -37,12 +35,10 @@
         android:text="Combo XXXXXXXXXXX"
         android:textColor="@color/black"
         android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/retangulo"
-        app:layout_constraintHorizontal_bias="0.177"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toEndOf="@+id/img_lanche"
-        app:layout_constraintTop_toTopOf="@+id/retangulo"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintTop_toTopOf="@+id/retangulo"/>
 
     <TextView
         android:id="@+id/text_valor_lanche"
@@ -52,28 +48,26 @@
         android:text="R$00,00"
         android:textColor="@color/orange"
         android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/retangulo"
-        app:layout_constraintHorizontal_bias="0.071"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toEndOf="@+id/img_lanche"
-        app:layout_constraintTop_toBottomOf="@+id/text_nome_lanche"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintTop_toBottomOf="@+id/text_nome_lanche" />
 
     <ImageButton
         android:id="@+id/bnt_login"
         android:layout_width="70dp"
         android:layout_height="25dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/botaored"
         app:layout_constraintBottom_toBottomOf="@+id/retangulo"
         app:layout_constraintEnd_toEndOf="@+id/retangulo"
-        app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toEndOf="@+id/text_valor_lanche"
         app:layout_constraintTop_toBottomOf="@+id/text_nome_lanche"
-        app:layout_constraintVertical_bias="0.155"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/qtd_lanche"
+        android:id="@+id/text_btn_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/abeezee_italic"
@@ -94,6 +88,7 @@
         android:layout_height="20dp"
         android:src="@drawable/ic_mais"
         android:text="Button"
+        android:layout_marginEnd="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/retangulo"
         app:layout_constraintEnd_toEndOf="@+id/retangulo"
         app:layout_constraintHorizontal_bias="0.152"
