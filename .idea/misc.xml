@@ -24,11 +24,16 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33229166666666665" />
         <entry key="app/src/main/res/layout/carrinho_item_view.xml" value="0.5" />
         <entry key="app/src/main/res/layout/dashboard_screen.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_bebidas.xml" value="0.33229166666666665" />
+        <entry key="app/src/main/res/layout/fragment_burgers.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_combos.xml" value="0.31666666666666665" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.33229166666666665" />
+        <entry key="app/src/main/res/layout/fragment_sobremesa.xml" value="0.33229166666666665" />
+        <entry key="app/src/main/res/layout/fragment_sobremesas.xml" value="0.33229166666666665" />
         <entry key="app/src/main/res/layout/item_view_detalhes.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_view_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/tela_cadastro.xml" value="0.15151515151515152" />
-        <entry key="app/src/main/res/layout/tela_carrinho.xml" value="0.2549019607843137" />
+        <entry key="app/src/main/res/layout/tela_carrinho.xml" value="0.33" />
         <entry key="app/src/main/res/layout/tela_carrinho_vazio.xml" value="0.18" />
         <entry key="app/src/main/res/layout/tela_checkout_entrega.xml" value="0.16" />
         <entry key="app/src/main/res/layout/tela_checkout_pagamento.xml" value="0.15572916666666667" />
@@ -58,7 +63,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.33" />
+        <option name="scale" value="0.22" />
       </ProjectState>
     </option>
   </component>

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#F5F5F8">
+    android:layout_height="wrap_content"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/color_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/retangulo"
@@ -53,18 +59,18 @@
         app:layout_constraintStart_toEndOf="@+id/img_lanche"
         app:layout_constraintTop_toBottomOf="@+id/text_nome_lanche" />
 
-    <ImageButton
-        android:id="@+id/bnt_login"
-        android:layout_width="70dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="65dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/botaored"
-        app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/retangulo"
-        app:layout_constraintStart_toEndOf="@+id/text_valor_lanche"
-        app:layout_constraintTop_toBottomOf="@+id/text_nome_lanche"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <ImageButton
+            android:id="@+id/bnt_login"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/botaored"
+            app:layout_constraintBottom_toBottomOf="@+id/retangulo"
+            app:layout_constraintEnd_toEndOf="@+id/retangulo"
+            app:layout_constraintStart_toEndOf="@+id/text_valor_lanche"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_lanche"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/text_btn_2"
@@ -97,17 +103,18 @@
         app:layout_constraintVertical_bias="0.512"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/button3"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:src="@drawable/ic_menos"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintEnd_toStartOf="@+id/bnt_login"
-        app:layout_constraintHorizontal_bias="0.695"
-        app:layout_constraintStart_toEndOf="@+id/text_valor_lanche"
-        app:layout_constraintTop_toTopOf="@+id/retangulo"
-        app:layout_constraintVertical_bias="0.512"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_menos"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="@+id/retangulo"
+            app:layout_constraintEnd_toStartOf="@+id/bnt_login"
+            app:layout_constraintHorizontal_bias="0.695"
+            app:layout_constraintStart_toEndOf="@+id/text_valor_lanche"
+            app:layout_constraintTop_toTopOf="@+id/retangulo"
+            app:layout_constraintVertical_bias="0.512"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
