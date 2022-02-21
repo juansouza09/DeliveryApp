@@ -51,7 +51,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        tools:listitem="@layout/carrinho_item_view"
+        tools:listitem="@layout/item_view_carrinho"
         app:layout_constraintBottom_toTopOf="@+id/bnt_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
