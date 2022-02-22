@@ -1,5 +1,5 @@
-# An Delivery App to a burger place 🍔🍟
-Developed to practice my technical knowledge.
+# App delivery para hamburgeria 🍔🍟
+Desenvolvido para práticar os conhecimentos técnicos.
 
 <h2> 🚀 Tecnologias </h2>
 Esse projeto foi desenvolvido com as seguintes tecnologias:
