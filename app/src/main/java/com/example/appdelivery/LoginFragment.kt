@@ -10,7 +10,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 class LoginFragment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tela_login_and_cadastro)
+        setContentView(R.layout.activity_login_and_cadastro)
 
         val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
         val viewPager2 = findViewById<ViewPager2>(R.id.view_pager_2)

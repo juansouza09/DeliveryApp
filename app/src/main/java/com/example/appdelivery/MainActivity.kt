@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.dashboard_screen)
+        setContentView(R.layout.activity_dashboard)
 
         val button = findViewById<Button>(R.id.buttonDashboard)
 
