@@ -15,6 +15,6 @@ class CombosFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_combos, container, false)
+        return inflater.inflate(R.layout.fragment_combo, container, false)
     }
 }
