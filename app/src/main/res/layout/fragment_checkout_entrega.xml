@@ -37,13 +37,14 @@
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="wrap_content"
-        android:layout_height="135dp"
-        tools:listitem="@layout/item_view_endereco"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/text1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_entrega_2" />
+        app:layout_constraintTop_toBottomOf="@+id/text_entrega_2"
+        tools:listitem="@layout/item_view_endereco" />
 
     <TextView
         android:id="@+id/text1"
