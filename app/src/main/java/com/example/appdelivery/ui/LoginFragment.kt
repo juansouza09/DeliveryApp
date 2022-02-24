@@ -1,9 +1,10 @@
-package com.example.appdelivery
+package com.example.appdelivery.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
-import com.example.appdelivery.tablayout.adapter.ViewPagerAdapter
+import com.example.appdelivery.R
+import com.example.appdelivery.ui.tablayout.adapters.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 

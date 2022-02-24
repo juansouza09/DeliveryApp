@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:layout_constraintHorizontal_chainStyle="spread"
     android:background="#FF4B3A"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <ImageView
         android:id="@+id/img_girl"

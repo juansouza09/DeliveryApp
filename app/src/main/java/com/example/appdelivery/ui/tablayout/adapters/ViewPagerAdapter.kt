@@ -1,11 +1,11 @@
-package com.example.appdelivery.tablayout.adapter
+package com.example.appdelivery.ui.tablayout.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.appdelivery.tablayout.fragments.CadastroFragment
-import com.example.appdelivery.tablayout.fragments.LoginFragment
+import com.example.appdelivery.ui.tablayout.fragments.CadastroFragment
+import com.example.appdelivery.ui.tablayout.fragments.LoginFragment
 
 class ViewPagerAdapter(fragmenManager : FragmentManager, lifecycle : Lifecycle): FragmentStateAdapter(fragmenManager, lifecycle) {
     override fun getItemCount(): Int {
