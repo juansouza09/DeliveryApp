@@ -1,8 +1,12 @@
 package com.example.appdelivery.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment.findNavController
 import com.example.appdelivery.R
@@ -11,6 +15,7 @@ import com.example.appdelivery.ui.tablayout.fragments.FavoritosFragment
 import com.example.appdelivery.ui.tablayout.fragments.HistoricoFragment
 import com.example.appdelivery.ui.tablayout.fragments.HomeFragment
 import com.example.appdelivery.ui.tablayout.fragments.PerfilFragment
+import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class PrincipalActivity : AppCompatActivity() {
@@ -35,6 +40,7 @@ class PrincipalActivity : AppCompatActivity() {
             true
         }
     }
+
     private fun replaceFragment(fragment : Fragment){
         if (fragment != null){
             val transaction = supportFragmentManager.beginTransaction()
