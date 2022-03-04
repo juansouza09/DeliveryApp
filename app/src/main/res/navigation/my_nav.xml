@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.appdelivery.ui.tablayout.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.appdelivery.ui.tablayout.fragments.FavoritosFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" >
+        <action
+            android:id="@+id/action_favoritosFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.appdelivery.ui.tablayout.fragments.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_historicoFragment"
+            app:destination="@id/historicoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historicoFragment"
+        android:name="com.example.appdelivery.ui.tablayout.fragments.HistoricoFragment"
+        android:label="fragment_historico"
+        tools:layout="@layout/fragment_historico" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.appdelivery.ui.MainActivity"
+        android:label="activity_dashboard"
+        tools:layout="@layout/activity_dashboard" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.appdelivery.ui.LoginActivity"
+        android:label="activity_login_and_cadastro"
+        tools:layout="@layout/activity_login_and_cadastro" />
+</navigation>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_bg"
-    tools:context=".ui.tablayout.fragments.BebidasFragment">
+    tools:context=".ui.tablayout.fragments.FavoritosFragment">
 
     <ScrollView
         android:layout_width="match_parent"

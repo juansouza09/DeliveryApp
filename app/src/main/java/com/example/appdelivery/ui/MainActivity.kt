@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.appdelivery.R
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -17,8 +18,9 @@ class MainActivity : AppCompatActivity() {
             abrirLogin()
         }
     }
-    private fun abrirLogin(){
-        val loginTela = Intent(this, LoginFragment::class.java)
+
+    private fun abrirLogin() {
+        val loginTela = Intent(this, LoginActivity::class.java)
         startActivity(loginTela)
 
     }

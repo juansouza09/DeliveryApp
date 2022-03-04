@@ -18,7 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.LoginFragment"
+        <activity android:name=".ui.LoginActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.PrincipalActivity"
             android:exported="true"/>
     </application>
 
