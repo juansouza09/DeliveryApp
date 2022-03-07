@@ -34,5 +34,14 @@
         <item name="textAllCaps">false</item>
     </style>
 
+    <style name="Widget.App.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.RadioButton</item>
+    </style>
+
+    <style name="ThemeOverlay.App.RadioButton" parent="">
+        <item name="colorOnSurface">@color/orange</item>
+        <item name="colorSecondary">@color/orange</item>
+    </style>
+
 
 </resources>

@@ -12,5 +12,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">#FF4B3A</item>
         <!-- Customize your theme here. -->
+        <item name="radioButtonStyle">@style/Widget.App.RadioButton</item>
         </style>
 </resources>
