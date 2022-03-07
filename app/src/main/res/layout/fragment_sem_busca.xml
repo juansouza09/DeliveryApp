@@ -6,24 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="15dp"
-        android:hint="Procure aqui"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="TouchTargetSizeCheck" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -85,5 +67,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_body_2"
         app:layout_constraintVertical_bias="0.017" />
+
+    <SearchView
+        android:id="@+id/search_bar_sem_busca"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageView2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
