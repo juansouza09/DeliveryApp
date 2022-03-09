@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#F5F5F8"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F8">
 
     <TextView
         android:id="@+id/text_checkout_titulo"
@@ -25,23 +25,97 @@
         android:id="@+id/text_pagamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/abeezee_italic"
         android:gravity="center"
         android:text="Pagamento"
         android:textColor="@color/black"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.211"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_checkout_titulo"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintTop_toBottomOf="@+id/text_checkout_titulo" />
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_pedido">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            style="@style/Widget.App.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radio_button_credit">
+
+            <RadioButton
+                android:id="@+id/radio_button_portao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Portão da casa/prédio" />
+
+            <RadioButton
+                android:id="@+id/radio_button_portaria"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Portaria do prédio/condomínio" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_pag">
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            style="@style/Widget.App.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radio_button_credit">
+
+            <RadioButton
+                android:id="@+id/radio_button_credit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cartão de Crédito" />
+
+            <RadioButton
+                android:id="@+id/radio_button_debit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cartão de Débito" />
+
+            <RadioButton
+                android:id="@+id/radio_button_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dinheiro" />
+        </RadioGroup>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="48dp"
         android:fontFamily="@font/abeezee"
         android:gravity="center"
@@ -55,7 +129,7 @@
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="48dp"
         android:fontFamily="@font/abeezee"
         android:gravity="center"
@@ -67,16 +141,15 @@
 
     <ImageButton
         android:id="@+id/bnt_login"
-        android:layout_width="324dp"
+        android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/botaored"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
@@ -93,5 +166,31 @@
         app:layout_constraintStart_toStartOf="@+id/bnt_login"
         app:layout_constraintTop_toTopOf="@+id/bnt_login" />
 
+    <TextView
+        android:id="@+id/text_pag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Método de pagamento"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pagamento" />
 
+    <TextView
+        android:id="@+id/text_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Onde deixar o pedido?"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/linear_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="orange">#FA4A0C</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#656565</color>
     <color name="color_bg">#F2F2F2</color>
+    <color name="color_tab_item_home">#9A9A9D</color>
 </resources>
