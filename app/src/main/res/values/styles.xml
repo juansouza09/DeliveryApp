@@ -43,5 +43,16 @@
         <item name="colorSecondary">@color/orange</item>
     </style>
 
+    <style name="bottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="enforceTextAppearance">true</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="itemIconTint">@color/mtrl_navigation_bar_colored_item_tint</item>
+        <item name="itemRippleColor">@color/mtrl_navigation_bar_colored_ripple_color</item>
+        <item name="itemTextAppearanceInactive">?attr/textAppearanceCaption</item>
+        <item name="itemTextAppearanceActive">?attr/textAppearanceCaption</item>
+        <item name="itemTextColor">@color/mtrl_navigation_bar_colored_item_tint</item>
+    </style>
+
 
 </resources>

@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#F5F5F8"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F8">
 
     <TextView
         android:id="@+id/text_checkout_titulo"
@@ -25,15 +25,15 @@
         android:id="@+id/text_entrega"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/abeezee_italic"
         android:text="Entrega"
         android:textColor="@color/black"
         android:textSize="35sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="30dp"
         app:layout_constraintBottom_toTopOf="@id/text_entrega_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_checkout_titulo"/>
+        app:layout_constraintTop_toBottomOf="@+id/text_checkout_titulo" />
 
     <ListView
         android:id="@+id/listView"
@@ -107,16 +107,16 @@
         android:id="@+id/text_entrega_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/abeezee_italic"
         android:gravity="center"
         android:text="Detalhes do Endereço"
         android:textColor="@color/black"
         android:textSize="17sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
         app:layout_constraintBottom_toTopOf="@id/listView"
-        app:layout_constraintTop_toBottomOf="@id/text_entrega"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_entrega" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

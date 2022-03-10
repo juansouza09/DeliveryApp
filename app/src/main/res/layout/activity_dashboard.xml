@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_constraintHorizontal_chainStyle="spread"
     android:background="#FF4B3A"
+    app:layout_constraintHorizontal_chainStyle="spread"
     tools:context=".ui.MainActivity">
 
     <ImageView
@@ -13,12 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/buttonDashboard"
-        app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
         app:srcCompat="@drawable/images"
-        tools:ignore="ImageContrastCheck, ContentDescription"
-        />
+        tools:ignore="ImageContrastCheck, ContentDescription" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="70dp"
@@ -30,8 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -46,13 +44,15 @@
         app:layout_constraintBottom_toTopOf="@+id/img_girl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
         android:fontFamily="@font/abeezee_italic"
         android:shadowColor="#050505"
         android:text="by Juan Pablo"
@@ -60,15 +60,12 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/img_girl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/img_girl"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonDashboard"
         android:layout_width="match_parent"
         android:layout_height="65dp"
@@ -76,16 +73,25 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_button"
-        android:fontFamily="@font/abeezee_italic"
-        android:text="Bem-vindo"
-        android:textAlignment="center"
-        android:textColor="#FF460A"
-        android:textSize="18sp"
-        android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_girl"
-        />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Bem-vindo"
+        android:textAlignment="center"
+        android:textColor="#FF460A"
+        android:textSize="22sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDashboard"
+        app:layout_constraintEnd_toEndOf="@id/buttonDashboard"
+        app:layout_constraintStart_toStartOf="@id/buttonDashboard"
+        app:layout_constraintTop_toBottomOf="@+id/img_girl" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#F6F6F9"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F6F6F9">
 
     <ImageButton
         android:id="@+id/bnt_login"
         android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/botaored"
@@ -116,10 +116,10 @@
         android:layout_width="match_parent"
         android:layout_height="270dp"
         android:layout_marginBottom="20dp"
-        app:srcCompat="@drawable/img_burger"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_burger" />
 
     <ImageButton
         android:layout_width="wrap_content"

@@ -14,12 +14,11 @@
         android:layout_marginBottom="10dp"
         android:background="@drawable/botaored"
         android:scaleType="center"
-        app:layout_constraintTop_toBottomOf="@id/scrollView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="ContentDescription, SpeakableTextPresentCheck"
-        />
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        tools:ignore="ContentDescription, SpeakableTextPresentCheck" />
 
 
     <TextView
@@ -33,18 +32,17 @@
         app:layout_constraintBottom_toBottomOf="@+id/bnt_login"
         app:layout_constraintEnd_toEndOf="@+id/bnt_login"
         app:layout_constraintStart_toStartOf="@+id/bnt_login"
-        app:layout_constraintTop_toTopOf="@+id/bnt_login"
-        />
+        app:layout_constraintTop_toTopOf="@+id/bnt_login" />
 
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bnt_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bnt_login">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -70,8 +68,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,14 +80,14 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
                 android:hint="Senha:"
-                app:hintTextColor="@color/black"
-                app:endIconMode="password_toggle">
+                app:endIconMode="password_toggle"
+                app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/black"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -104,8 +101,7 @@
                 android:fontFamily="@font/abeezee_italic"
                 android:text="Esqueceu a senha?"
                 android:textColor="#FA4A0C"
-                android:textSize="17sp"
-                />
+                android:textSize="17sp" />
         </LinearLayout>
 
     </ScrollView>

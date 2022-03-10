@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#F5F5F8"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F8">
 
     <ImageView
         android:id="@+id/imageView"
@@ -28,8 +28,10 @@
         android:text="Histórico"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="157dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/text_do_historico"
         android:layout_width="wrap_content"

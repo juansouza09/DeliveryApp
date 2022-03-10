@@ -5,59 +5,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content">
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="@color/color_bg"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/color_bg">
 
-    <ImageView
-        android:id="@+id/retangulo"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/retangulo" />
+        <ImageView
+            android:id="@+id/retangulo"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/retangulo" />
 
-    <ImageView
-        android:id="@+id/img_lanche"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintStart_toStartOf="@+id/retangulo"
-        app:layout_constraintTop_toTopOf="@+id/retangulo"
-        app:srcCompat="@drawable/img_burger" />
+        <ImageView
+            android:id="@+id/img_lanche"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/retangulo"
+            app:layout_constraintStart_toStartOf="@+id/retangulo"
+            app:layout_constraintTop_toTopOf="@+id/retangulo"
+            app:srcCompat="@drawable/img_burger" />
 
-    <TextView
-        android:id="@+id/text_nome_lanche"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/abeezee_italic"
-        android:text="Combo XXXXXXXXXXX"
-        android:textColor="@color/black"
-        android:textSize="17dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintStart_toEndOf="@+id/img_lanche"
-        app:layout_constraintTop_toTopOf="@+id/retangulo"/>
+        <TextView
+            android:id="@+id/text_nome_lanche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/abeezee_italic"
+            android:text="Combo XXXXXXXXXXX"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/img_lanche"
+            app:layout_constraintTop_toTopOf="@+id/retangulo" />
 
-    <TextView
-        android:id="@+id/text_valor_lanche"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/abeezee_italic"
-        android:text="R$00,00"
-        android:textColor="@color/orange"
-        android:textSize="15dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toEndOf="@+id/img_lanche"
-        app:layout_constraintTop_toBottomOf="@+id/text_nome_lanche" />
+        <TextView
+            android:id="@+id/text_valor_lanche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/abeezee_italic"
+            android:text="R$00,00"
+            android:textColor="@color/orange"
+            android:textSize="15dp"
+            app:layout_constraintStart_toEndOf="@+id/img_lanche"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_lanche" />
 
         <ImageButton
             android:id="@+id/bnt_login"
@@ -72,36 +72,36 @@
             app:layout_constraintTop_toBottomOf="@+id/text_nome_lanche"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-    <TextView
-        android:id="@+id/text_btn_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/abeezee_italic"
-        android:gravity="center"
-        android:text="1"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/bnt_login"
-        app:layout_constraintEnd_toEndOf="@+id/bnt_login"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/bnt_login"
-        app:layout_constraintTop_toTopOf="@+id/bnt_login"
-        app:layout_constraintVertical_bias="0.666" />
+        <TextView
+            android:id="@+id/text_btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abeezee_italic"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bnt_login"
+            app:layout_constraintEnd_toEndOf="@+id/bnt_login"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/bnt_login"
+            app:layout_constraintTop_toTopOf="@+id/bnt_login"
+            app:layout_constraintVertical_bias="0.666" />
 
-    <ImageButton
-        android:id="@+id/button"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:src="@drawable/ic_mais"
-        android:text="Button"
-        android:layout_marginEnd="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/retangulo"
-        app:layout_constraintEnd_toEndOf="@+id/retangulo"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toEndOf="@+id/bnt_login"
-        app:layout_constraintTop_toTopOf="@+id/retangulo"
-        app:layout_constraintVertical_bias="0.512"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/ic_mais"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="@+id/retangulo"
+            app:layout_constraintEnd_toEndOf="@+id/retangulo"
+            app:layout_constraintHorizontal_bias="0.152"
+            app:layout_constraintStart_toEndOf="@+id/bnt_login"
+            app:layout_constraintTop_toTopOf="@+id/retangulo"
+            app:layout_constraintVertical_bias="0.512"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/button3"
@@ -116,5 +116,5 @@
             app:layout_constraintTop_toTopOf="@+id/retangulo"
             app:layout_constraintVertical_bias="0.512"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

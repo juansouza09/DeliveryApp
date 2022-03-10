@@ -2,7 +2,7 @@ package com.example.appdelivery.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.example.appdelivery.R
 
@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        val button = findViewById<Button>(R.id.buttonDashboard)
+        val button = findViewById<ImageButton>(R.id.buttonDashboard)
 
         button.setOnClickListener {
             abrirLogin()

@@ -43,8 +43,8 @@
             android:textColor="@color/black"
             android:textSize="17sp"
             app:layout_constraintBottom_toTopOf="@id/img_lanche"
-            app:layout_constraintStart_toStartOf="@id/view"
             app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
             app:layout_constraintTop_toTopOf="@id/view" />
 
 
@@ -53,11 +53,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/abeezee_italic"
             android:text=" A partir de R$00,00"
             android:textColor="@color/orange"
             android:textSize="15sp"
-            android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toBottomOf="@id/view"
             app:layout_constraintEnd_toEndOf="@id/view"
             app:layout_constraintStart_toStartOf="@id/view" />
