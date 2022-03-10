@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-        <style name="Theme.AppDelivery" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.AppDelivery" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#F2F2F2</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -13,5 +13,5 @@
         <item name="android:statusBarColor">#FF4B3A</item>
         <!-- Customize your theme here. -->
         <item name="radioButtonStyle">@style/Widget.App.RadioButton</item>
-        </style>
+    </style>
 </resources>
