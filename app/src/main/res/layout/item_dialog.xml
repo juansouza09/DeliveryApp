@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/d_cima"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/custom_dialog" />
+
+    <ImageView
+        android:id="@+id/d_baixo"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/d_cima"
+        app:srcCompat="@drawable/custom_dialog_abaixo" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/d_cima"
+        app:layout_constraintStart_toStartOf="@+id/d_cima"
+        app:layout_constraintTop_toTopOf="@+id/d_cima">
+
+        <TextView
+            android:id="@+id/text_d_observe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Observe"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_d_entrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="ENTREGAR EM:"
+        android:textColor="#848282"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_cima" />
+
+    <TextView
+        android:id="@+id/text_d_ende"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/abeezee"
+        android:text="Rua pedro Araújo, 115 - 09887-123"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_d_entrega" />
+
+    <ImageView
+        android:id="@+id/btn_dialog"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/d_baixo"
+        app:layout_constraintEnd_toEndOf="@id/d_baixo"
+        app:layout_constraintStart_toEndOf="@id/text_d_cancelar"
+        app:srcCompat="@drawable/custom_button_red" />
+
+    <TextView
+        android:id="@+id/text_d_avancar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Avançar"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_dialog"
+        app:layout_constraintEnd_toEndOf="@id/btn_dialog"
+        app:layout_constraintStart_toStartOf="@id/btn_dialog"
+        app:layout_constraintTop_toTopOf="@id/btn_dialog" />
+
+    <TextView
+        android:id="@+id/text_d_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Cancelar"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_dialog"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
