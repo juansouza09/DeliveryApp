@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "578487180767",
+    "project_id": "lion-burger",
+    "storage_bucket": "lion-burger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578487180767:android:776d6e55b79e575222386a",
+        "android_client_info": {
+          "package_name": "com.example.appdelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578487180767-apurb5ngg3v5l7am1lunsc7atergmuvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdZyBO-IlGgTOhdQQ6W984UeJDfiH_Utg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578487180767-apurb5ngg3v5l7am1lunsc7atergmuvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
