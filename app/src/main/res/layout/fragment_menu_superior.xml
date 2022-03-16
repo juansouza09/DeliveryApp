@@ -15,7 +15,8 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@id/linear_carrinho_menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/img"
@@ -44,7 +45,8 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@id/linear_promo_menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_profile_menu">
+        app:layout_constraintTop_toBottomOf="@id/linear_profile_menu"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/img_carrinho"
@@ -72,7 +74,8 @@
         android:layout_marginTop="40dp"
         app:layout_constraintBottom_toTopOf="@id/linear_privacidade_menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_carrinho_menu">
+        app:layout_constraintTop_toBottomOf="@id/linear_carrinho_menu"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/img_promo"
@@ -100,7 +103,8 @@
         android:layout_marginTop="40dp"
         app:layout_constraintBottom_toTopOf="@id/linear_seguranca_menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_promo_menu">
+        app:layout_constraintTop_toBottomOf="@id/linear_promo_menu"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/img_privacidade"
@@ -127,7 +131,8 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_privacidade_menu">
+        app:layout_constraintTop_toBottomOf="@id/linear_privacidade_menu"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/img_seguranca"
@@ -153,9 +158,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="90dp"
-        app:layout_constraintTop_toBottomOf="se"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="UseCompoundDrawables">
 
         <TextView
             android:id="@+id/text_sair_menu"

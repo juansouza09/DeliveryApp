@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.appdelivery">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +23,7 @@
         <activity android:name=".ui.LoginActivity"
             android:exported="true"/>
 
-        <activity android:name=".ui.PrincipalActivity"
+        <activity android:name=".ui.HomeActivity"
             android:exported="true"/>
 
         <meta-data
