@@ -1,6 +1,5 @@
-package com.example.appdelivery.ui.tablayout.fragments
+package com.example.appdelivery.ui.tabHome.tabs
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

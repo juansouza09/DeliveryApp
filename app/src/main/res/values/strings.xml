@@ -15,4 +15,8 @@
     <string name="text_desc_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod \n tempor incididunt ut labore et dolore magna aliqua.</string>
     <string name="text_username">Juan Pablo B. de Souza</string>
     <string name="text_email">juan.souza@test.com</string>
+    <string name="combos">Combos</string>
+    <string name="burgers">Burgers</string>
+    <string name="bebidas">Bebidas</string>
+    <string name="sobremesas">Sobremesas</string>
 </resources>

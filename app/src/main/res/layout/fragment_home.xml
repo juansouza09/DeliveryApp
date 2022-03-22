@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_bg"
-    tools:context=".ui.tablayout.fragments.HomeFragment">
+    tools:context=".ui.tabHome.HomeFragment">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator"
@@ -77,6 +77,7 @@
         app:layout_constraintTop_toBottomOf="@id/search_view">
 
         <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
             style="@style/AppTabLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,6 +114,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:listitem="@layout/item_view_home"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
