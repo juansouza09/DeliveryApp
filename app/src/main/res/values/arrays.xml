@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="images">
+        <item>@drawable/img_prato</item>
+        <item>@drawable/img_prato</item>
+        <item>@drawable/img_prato</item>
+    </array>
+    <string-array name="names">
+        <item> Lion Burger</item>
+        <item> Lion Burger 2</item>
+        <item> Lion Burger 3</item>
+    </string-array>
+    <string-array name="descriptions">
+        <item> Teste 1 </item>
+        <item> Teste 2 </item>
+        <item> Teste 3 </item>
+    </string-array>
+    <string-array name="valores">
+        <item>R$30,00</item>
+        <item>R$30,00</item>
+        <item>R$30,00</item>
+    </string-array>
+</resources>

@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import com.example.appdelivery.R
 import com.example.appdelivery.databinding.FragmentHomeBinding
 import com.example.appdelivery.ui.tabHome.adapters.TabFragPageAdapter
-import com.example.appdelivery.ui.tabHome.listeners.CustomTabLayoutClickListener
+import com.google.android.material.tabs.TabLayoutMediator
 
 class HomeFragment : Fragment() {
 
@@ -24,13 +24,9 @@ class HomeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        observeProductState()
         setTabs()
+        addTabsToPageIndicator()
         super.onViewCreated(view, savedInstanceState)
-    }
-
-    private fun observeProductState(){
-
     }
 
     private fun setTabs(){
@@ -38,7 +34,30 @@ class HomeFragment : Fragment() {
         val adapter = TabFragPageAdapter(fm, lifecycle)
         binding?.let {
             it.viewPagerHome.adapter = adapter
-            it.tabLayout.addOnTabSelectedListener(CustomTabLayoutClickListener(it.viewPagerHome))
+        }
+    }
+
+    private fun addTabsToPageIndicator() {
+        binding?.let {
+            TabLayoutMediator(
+                it.tabLayout,
+                it.viewPagerHome
+            ) {tab, position ->
+                when(position){
+                    0 -> {
+                        tab.text = "Combos"
+                    }
+                    1 -> {
+                        tab.text = "Burgers"
+                    }
+                    2 -> {
+                        tab.text = "Bebidas"
+                    }
+                    3 -> {
+                        tab.text = "Sobremesas"
+                    }
+                }
+            }.attach()
         }
     }
 
