@@ -158,8 +158,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="90dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="UseCompoundDrawables">
 
         <TextView
@@ -169,7 +169,8 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Sair da conta"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/img_sair"

@@ -26,6 +26,12 @@
         <activity android:name=".ui.HomeActivity"
             android:exported="true"/>
 
+        <activity android:name=".ui.MenuSuperiorActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ui.CarrinhoActivity"
+            android:exported="true"/>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

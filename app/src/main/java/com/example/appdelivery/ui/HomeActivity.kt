@@ -26,15 +26,15 @@ class HomeActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.homeFragment2 -> replaceFragment(homeFragment)
                 R.id.favoriteFragment2 -> replaceFragment(favoritosFragment)
-                R.id.perfilFragment-> replaceFragment(perfilFragment)
+                R.id.perfilFragment -> replaceFragment(perfilFragment)
                 R.id.historicFragment -> replaceFragment(historicoFragment)
             }
             true
         }
     }
 
-    private fun replaceFragment(fragment : Fragment){
-        if (fragment != null){
+    private fun replaceFragment(fragment: Fragment) {
+        if (fragment != null) {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.navHostFragment, fragment)
             transaction.commit()
