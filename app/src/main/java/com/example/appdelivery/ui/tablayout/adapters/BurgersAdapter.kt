@@ -47,7 +47,7 @@ class BurgersListAdapter(
        //Picasso.get().load(burgersModelList[position].image?.url).into(holder.imgBurger)
         holder.txtBurgerName.text = burgersModelList[position].name
         holder.txtDesc.text = burgersModelList[position].desc
-        holder.txtValor.text = burgersModelList[position].valor
+        holder.txtValor.text = burgersModelList[position].price
     }
 
     override fun getItemCount(): Int {

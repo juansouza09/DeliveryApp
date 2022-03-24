@@ -21,19 +21,18 @@
         <ImageView
             android:id="@+id/img"
             android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/ic_user_menu"
             tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/text_info"
+        <Button
+            android:id="@+id/btn_perfil"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
             android:text="Perfil"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -51,19 +50,18 @@
         <ImageView
             android:id="@+id/img_carrinho"
             android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/ic_carrinho_menu"
             tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/text_carrinho_menu"
+        <Button
+            android:id="@+id/btn_carrinho"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
             android:text="Carrinho"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -80,19 +78,18 @@
         <ImageView
             android:id="@+id/img_promo"
             android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/ic_promo"
             tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/text_promo_menu"
+        <Button
+            android:id="@+id/btn_promo"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
             android:text="Promoções"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -109,19 +106,18 @@
         <ImageView
             android:id="@+id/img_privacidade"
             android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/ic_priva"
             tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/text_privacidade_menu"
+        <Button
+            android:id="@+id/btn_privacidade"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
             android:text="Privacidade"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -137,19 +133,18 @@
         <ImageView
             android:id="@+id/img_seguranca"
             android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/ic_seguranca"
             tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/text_seguraca_menu"
+        <Button
+            android:id="@+id/btn_seguranca"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
             android:text="Segurança"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -162,20 +157,19 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="UseCompoundDrawables">
 
-        <TextView
-            android:id="@+id/text_sair_menu"
+        <Button
+            android:id="@+id/btn_sair_da_conta"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
             android:text="Sair da conta"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
         <ImageView
             android:id="@+id/img_sair"
             android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             app:srcCompat="@drawable/ic_seta"
             tools:ignore="ContentDescription" />

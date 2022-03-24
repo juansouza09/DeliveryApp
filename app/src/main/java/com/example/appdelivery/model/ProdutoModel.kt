@@ -7,7 +7,7 @@ class ProdutoModel {
     var name: String? = null
     var image : Image? = null
     var desc: String? = null
-    var valor: String? = null
+    var price: String? = null
 }
 
 class Image {

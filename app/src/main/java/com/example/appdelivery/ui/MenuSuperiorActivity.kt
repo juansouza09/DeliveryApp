@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.appdelivery.R
 import com.example.appdelivery.databinding.FragmentMenuSuperiorBinding
@@ -18,5 +20,42 @@ class MenuSuperiorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_menu_superior)
+        openProfile()
+        openBag()
+        openPromo()
+        exitAccount()
+    }
+
+    private fun openProfile() {
+        val btn = findViewById<Button>(R.id.btn_perfil)
+        val intent = Intent(this, HomeActivity::class.java)
+        btn.setOnClickListener {
+            startActivity(intent)
+        }
+    }
+
+    private fun openBag() {
+        val btn = findViewById<Button>(R.id.btn_carrinho)
+        val intent = Intent(this, CarrinhoActivity::class.java)
+        btn.setOnClickListener {
+            startActivity(intent)
+        }
+    }
+
+    private fun openPromo() {
+        val btn = findViewById<Button>(R.id.btn_promo)
+        val intent = Intent(this, HomeActivity::class.java)
+        btn.setOnClickListener {
+            startActivity(intent)
+        }
+    }
+
+    private fun exitAccount() {
+        val btn = findViewById<Button>(R.id.btn_sair_da_conta)
+        val intent = Intent(this, LoginActivity::class.java)
+        btn.setOnClickListener {
+            Toast.makeText(this, "Conta deslogada!", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+        }
     }
 }
