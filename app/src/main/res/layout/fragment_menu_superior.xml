@@ -70,7 +70,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
-        app:layout_constraintBottom_toTopOf="@id/linear_privacidade_menu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linear_carrinho_menu"
         tools:ignore="UseCompoundDrawables">
@@ -93,61 +92,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linear_privacidade_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintBottom_toTopOf="@id/linear_seguranca_menu"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_promo_menu"
-        tools:ignore="UseCompoundDrawables">
-
-        <ImageView
-            android:id="@+id/img_privacidade"
-            android:layout_width="25dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_priva"
-            tools:ignore="ContentDescription" />
-
-        <Button
-            android:id="@+id/btn_privacidade"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Privacidade"
-            android:textAllCaps="false"
-            android:textColor="@color/white" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linear_seguranca_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_privacidade_menu"
-        tools:ignore="UseCompoundDrawables">
-
-        <ImageView
-            android:id="@+id/img_seguranca"
-            android:layout_width="25dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_seguranca"
-            tools:ignore="ContentDescription" />
-
-        <Button
-            android:id="@+id/btn_seguranca"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Segurança"
-            android:textAllCaps="false"
-            android:textColor="@color/white" />
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linear_sair_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -156,6 +100,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/img_sair"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_exit"
+            tools:ignore="ContentDescription" />
 
         <Button
             android:id="@+id/btn_sair_da_conta"
@@ -166,13 +117,6 @@
             android:textAllCaps="false"
             android:textColor="@color/white" />
 
-        <ImageView
-            android:id="@+id/img_sair"
-            android:layout_width="25dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
-            app:srcCompat="@drawable/ic_seta"
-            tools:ignore="ContentDescription" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
