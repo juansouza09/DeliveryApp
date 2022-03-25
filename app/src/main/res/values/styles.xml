@@ -39,7 +39,7 @@
     </style>
 
     <style name="ThemeOverlay.App.RadioButton" parent="">
-        <item name="colorOnSurface">@color/orange</item>
+        <item name="colorOnSurface">#DFDFDF</item>
         <item name="colorSecondary">@color/orange</item>
     </style>
 
