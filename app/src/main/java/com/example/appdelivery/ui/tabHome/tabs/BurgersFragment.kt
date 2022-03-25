@@ -8,13 +8,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appdelivery.R
-import com.example.appdelivery.ui.tablayout.adapters.BurgersListAdapter
+import com.example.appdelivery.adapter.ProductListAdapter
 
 class BurgersFragment : Fragment() {
 
     var context = null
     var recyclerView: RecyclerView? =  null
-    var adapter: BurgersListAdapter? =  null
+    var adapter: ProductListAdapter? =  null
     var layoutManager: LinearLayoutManager? =  null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
