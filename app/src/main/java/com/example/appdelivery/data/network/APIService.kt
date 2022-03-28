@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface APIService {
 
-    @GET("Products")
-    fun getProductList(): Call<MutableList<ProdutoModel>>
+    @GET("api/Products")
+    fun getProductList(): Call<List<ProdutoModel>>
 }

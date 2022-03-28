@@ -1,10 +1,14 @@
 package com.example.appdelivery.model
 
+import com.google.gson.annotations.SerializedName
+
 class ProdutoModel {
     var id : String? = null
     var name: String? = null
-    var image : Image? = null
+    @SerializedName("description")
     var desc: String? = null
+    @SerializedName("photoUrl")
+    var image : String? = null
     var price: String? = null
 }
 

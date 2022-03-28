@@ -24,6 +24,7 @@ object Retrofit {
             retrofit = Retrofit.Builder()
                 .baseUrl(baseUrl)
                 .addConverterFactory(GsonConverterFactory.create())
+                .client(okHttpClient)
                 .build()
         }
         return retrofit!!

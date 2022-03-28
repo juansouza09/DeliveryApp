@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.appdelivery.R
 import com.example.appdelivery.databinding.FragmentHomeBinding
 import com.example.appdelivery.databinding.FragmentMenuSuperiorBinding
+import com.example.appdelivery.domain.viewModel.MainViewModel
 import com.example.appdelivery.ui.CarrinhoActivity
 import com.example.appdelivery.ui.HomeActivity
 import com.example.appdelivery.ui.MenuSuperiorActivity

@@ -1,5 +1,11 @@
 package com.example.appdelivery
 
+import com.example.appdelivery.data.common.Common
+import com.example.appdelivery.data.network.APIService
+import com.example.appdelivery.data.network.Retrofit
+import com.example.appdelivery.data.repositories.MainRepo
+import com.example.appdelivery.data.repositories.MainRepoImpl
+import kotlinx.coroutines.runBlocking
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -9,9 +15,3 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitTest {
-    @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
-    }
-}

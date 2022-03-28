@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.appdelivery.R
 import com.example.appdelivery.adapter.ProductListAdapter
 import com.example.appdelivery.databinding.FragmentComboBinding
+import com.example.appdelivery.databinding.FragmentHomeBinding
 import com.example.appdelivery.domain.viewModel.MainViewModel
 import com.example.appdelivery.ui.HomeActivity
 
@@ -21,30 +22,30 @@ class CombosFragment : Fragment() {
     var mainViewModel: MainViewModel? = null
     var recyclerview : RecyclerView? = null
     var adapter : ProductListAdapter? = null
-    var layoutManager: LinearLayoutManager? = null
     var binding: FragmentComboBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_combo, container, false)
+
+        binding = FragmentComboBinding.inflate(inflater, container, false)
+        mainViewModel = ViewModelProvider(this.requireActivity())[MainViewModel::class.java]
+        return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        mainViewModel = ViewModelProvider(requireActivity())[MainViewModel::class.java]
 
-        recyclerview = binding?.recyclerCombos
-        recyclerview!!.setHasFixedSize(false)
-        layoutManager = LinearLayoutManager(requireContext())
-        recyclerview!!.layoutManager = layoutManager
 
-        mainViewModel!!.getCatList.observe(requireActivity()){productModels ->
+        recyclerview = binding?.recyclerCombosFragment
+        recyclerview!!.setHasFixedSize(true)
+        recyclerview!!.layoutManager = LinearLayoutManager(this.requireContext())
+        recyclerview!!.adapter = adapter
+
+        mainViewModel!!.products.observe(requireActivity()){productModels ->
             Log.e("Main", "ProductList: " + productModels.firstOrNull()?.name)
 
-            adapter!!.notifyDataSetChanged()
-            recyclerview!!.adapter = adapter
         }
     }
 }
