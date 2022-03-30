@@ -10,7 +10,7 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_body"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_body_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.628"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
         android:textAlignment="center"
         android:textColor="@color/gray"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_body_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,11 +62,10 @@
         android:textAlignment="center"
         android:textColor="@color/gray"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_body_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_body_2"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintTop_toBottomOf="@+id/text_body_2"/>
 
     <TextView
         android:id="@+id/text_body_4"
@@ -78,26 +77,19 @@
         android:textAlignment="center"
         android:textColor="@color/gray"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_body_3"
-        app:layout_constraintVertical_bias="0.018" />
+        app:layout_constraintTop_toBottomOf="@+id/text_body_3" />
 
     <ImageButton
         android:id="@+id/bnt_login"
         android:layout_width="324dp"
         android:layout_height="65dp"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/botaored"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_body_4"
-        app:layout_constraintVertical_bias="0.224"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView

@@ -25,7 +25,8 @@
         app:layout_constraintBottom_toTopOf="@id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/text_body"
@@ -35,7 +36,9 @@
         android:text="Produto não encontrado"
         android:textAlignment="center"
         android:textColor="@color/black"
+        android:layout_marginTop="30dp"
         android:textSize="28dp"
+        app:layout_constraintBottom_toTopOf="@id/text_body_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -44,7 +47,7 @@
         android:id="@+id/text_body_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/abeezee"
         android:text="Tente pesquisar o item com"
         android:textAlignment="center"
@@ -60,7 +63,7 @@
         android:id="@+id/text_body_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/abeezee"
         android:text="uma palavra-chave diferente."

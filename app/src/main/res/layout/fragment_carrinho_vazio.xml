@@ -24,12 +24,11 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@id/text_do_historico"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.359"
+        app:layout_constraintTop_toBottomOf="@id/text_carrinho_titulo"
         app:srcCompat="@drawable/ic_carrinho" />
 
     <TextView
@@ -51,42 +50,39 @@
         android:id="@+id/text_do_historico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/abeezee_italic"
-        android:gravity="center"
-        android:text="Sem histórico ainda"
+        android:text="Sem pedidos ainda"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_do_historico2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/text_do_historico2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/abeezee"
-        android:gravity="center"
         android:text="Aperte o botão"
         android:textColor="#656565"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_do_historico3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_do_historico"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintTop_toBottomOf="@+id/text_do_historico" />
 
     <TextView
         android:id="@+id/text_do_historico3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/abeezee"
-        android:gravity="center"
         android:text="abaixo para criar um novo pedido"
         android:textColor="#656565"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_do_historico2"

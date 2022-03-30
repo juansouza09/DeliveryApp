@@ -3,30 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    tools:context=".ui.tablayout.fragments.HistoricoFragment"
+    android:layout_height="match_parent"
     android:background="#F5F5F8"
-    android:layout_height="match_parent">
+    tools:context=".ui.tablayout.fragments.HistoricoFragment">
 
 
     <TextView
         android:id="@+id/text_carrinho_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/abeezee_italic"
         android:text="Histórico"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:layout_marginTop="25dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/bnt_login"
         android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/botaored"
@@ -53,11 +53,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="10dp"
-        tools:listitem="@layout/item_view_home"
+        app:layout_constraintBottom_toTopOf="@id/bnt_login"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_carrinho_titulo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bnt_login"/>
+        tools:listitem="@layout/item_view_home" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

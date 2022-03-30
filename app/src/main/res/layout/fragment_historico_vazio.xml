@@ -10,21 +10,19 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@id/text_do_historico"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36"
+        app:layout_constraintTop_toBottomOf="@id/text_main_historic"
         app:srcCompat="@drawable/ic_historico" />
 
     <TextView
-        android:id="@+id/text_carrinho_titulo"
+        android:id="@+id/text_main_historic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/abeezee_italic"
-        android:gravity="center"
         android:text="Histórico"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -36,59 +34,55 @@
         android:id="@+id/text_do_historico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/abeezee_italic"
-        android:gravity="center"
         android:text="Sem histórico ainda"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_do_historico2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/text_do_historico2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/abeezee"
-        android:gravity="center"
         android:text="Aperte o botão"
         android:textColor="@color/gray"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_do_historico3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_do_historico"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintTop_toBottomOf="@+id/text_do_historico" />
 
     <TextView
         android:id="@+id/text_do_historico3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/abeezee"
-        android:gravity="center"
         android:text="abaixo para criar um novo pedido"
         android:textColor="@color/gray"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_do_historico2"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toBottomOf="@+id/text_do_historico2" />
 
     <ImageButton
         android:id="@+id/bnt_login"
-        android:layout_width="324dp"
+        android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/botaored"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
@@ -96,7 +90,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/abeezee_italic"
-        android:gravity="center"
         android:text="Novo pedido"
         android:textColor="@color/white"
         android:textSize="18sp"
