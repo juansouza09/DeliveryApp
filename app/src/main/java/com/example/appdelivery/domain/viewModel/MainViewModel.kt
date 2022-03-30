@@ -1,5 +1,6 @@
 package com.example.appdelivery.domain.viewModel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -22,6 +23,7 @@ class MainViewModel(
         val mainRepo: MainRepo = MainRepoImpl(service)
         viewModelScope.launch {
             val productsResponse = mainRepo.getProducts()
+            Log.e("Products", "MainViewModel = $productsResponse")
             _products.postValue(productsResponse)
         }
     }

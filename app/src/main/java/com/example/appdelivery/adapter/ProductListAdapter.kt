@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso
 
 class ProductListAdapter(
     var context: Context,
-    var productModelList: MutableList<ProdutoModel>
+    var productModelList: List<ProdutoModel>
 ): RecyclerView.Adapter<ProductListAdapter.ProductViewHolder>() {
     inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
@@ -37,9 +37,9 @@ class ProductListAdapter(
     }
 
     override fun onBindViewHolder(holder: ProductListAdapter.ProductViewHolder, position: Int) {
-        Picasso.get().load(productModelList[position].image?.url).into(holder.imgBurger)
+        Picasso.get().load(productModelList[position].photoUrl).into(holder.imgBurger)
         holder.txtBurgerName.text = productModelList[position].name
-        holder.txtDesc.text = productModelList[position].desc
+        holder.txtDesc.text = productModelList[position].description
         holder.txtValor.text = productModelList[position].price
     }
 

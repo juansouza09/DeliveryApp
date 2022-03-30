@@ -45,9 +45,9 @@ class CombosFragment : Fragment() {
 
         mainViewModel!!.products.observe(requireActivity()){productModels ->
             Log.e("Main", "ProductList: " + productModels.firstOrNull()?.name)
-
+            adapter = ProductListAdapter(requireContext(), productModels)
+            recyclerview!!.adapter = adapter
         }
-        recyclerview!!.adapter = adapter
 
     }
 }

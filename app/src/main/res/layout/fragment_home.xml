@@ -81,7 +81,7 @@
             style="@style/AppTabLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabContentStart="60dp"
+            app:tabContentStart="80dp"
             android:layout_gravity="center_horizontal"
             app:tabMode="scrollable">
 

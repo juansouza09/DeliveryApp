@@ -29,35 +29,13 @@ class MainRepoImpl(
 //            return data
 //        }
 
-    override fun getProducts(): List<ProdutoModel> {
+    override suspend fun getProducts(): List<ProdutoModel> {
         var products: List<ProdutoModel> = listOf()
-        apiService.getProductList().enqueue(object : Callback<List<ProdutoModel>> {
-
-            override fun onResponse(
-                call: Call<List<ProdutoModel>>,
-                response: Response<List<ProdutoModel>>
-            ) {
-
-                Log.e(TAG, "onResponse: " + response.code())
-                if (response.isSuccessful) {
-                    products = response.body() ?: listOf()
-                    Log.i("RESPONSE_BODY", response.toString())
-                } else {
-                    products = mutableListOf()
-                }
-            }
-
-            override fun onFailure(call: Call<List<ProdutoModel>>, t: Throwable) {
-                products = listOf()
-                Log.e(TAG, "OnResponse: " + t.message)
-            }
-
-        })
-        return products
+        return apiService.getProductList()
     }
 }
 
 interface MainRepo {
-    fun getProducts(): List<ProdutoModel>
+    suspend fun getProducts(): List<ProdutoModel>
 }
 

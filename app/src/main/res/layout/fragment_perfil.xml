@@ -59,7 +59,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/abeezee_italic"
-        android:text="Informação"
+        android:text="Informações"
         android:textColor="@color/black"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@id/imageView6"

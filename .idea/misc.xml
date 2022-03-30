@@ -44,7 +44,7 @@
         <entry key="app/src/main/res/layout/fragment_burgers.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_cadastro.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_carrinho.xml" value="0.33177083333333335" />
-        <entry key="app/src/main/res/layout/fragment_carrinho_vazio.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_carrinho_vazio.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_checkout_entrega.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_checkout_pagamento.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_combo.xml" value="0.33" />
@@ -69,7 +69,7 @@
         <entry key="app/src/main/res/layout/item_view_detalhes.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_view_endereco.xml" value="0.33229166666666665" />
         <entry key="app/src/main/res/layout/item_view_favorite.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/item_view_home.xml" value="0.2676470588235294" />
+        <entry key="app/src/main/res/layout/item_view_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_view_pesquisa.xml" value="0.3463541666666667" />
         <entry key="app/src/main/res/layout/tela_adicionar_endereco.xml" value="0.33229166666666665" />
         <entry key="app/src/main/res/layout/tela_cadastro.xml" value="0.15151515151515152" />

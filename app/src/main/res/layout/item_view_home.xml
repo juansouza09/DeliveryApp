@@ -1,80 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:background="@color/color_bg"
-    android:padding="10dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_marginBottom="5dp"
+    android:layout_height="130dp">
 
     <ImageView
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="match_parent"
         android:background="@drawable/custom_view_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/img_lanche"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="10dp"
-            app:layout_constraintEnd_toEndOf="@id/view"
-            app:layout_constraintTop_toTopOf="@id/view"
-            app:srcCompat="@drawable/img_prato" />
+    <ImageView
+        android:id="@+id/img_lanche"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@id/text_desc_lanche"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:srcCompat="@drawable/img_prato" />
 
 
-        <TextView
-            android:id="@+id/text_nome_lanche"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/abeezee_italic"
-            android:text="Combo Lions"
-            android:textColor="@color/black"
-            android:textSize="17dp"
-            app:layout_constraintStart_toStartOf="@id/view"
-            app:layout_constraintTop_toTopOf="@id/view" />
+    <TextView
+        android:id="@+id/text_nome_lanche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Combo Lions"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view" />
 
 
-        <TextView
-            android:id="@+id/text_desc_lanche"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="@font/abeezee"
-            android:maxLines="3"
-            android:text="@string/text_desc_item"
-            android:textAlignment="textStart"
-            android:textSize="12dp"
-            app:layout_constraintEnd_toStartOf="@id/img_lanche"
-            app:layout_constraintStart_toStartOf="@id/view"
-            app:layout_constraintTop_toBottomOf="@id/text_nome_lanche" />
+    <TextView
+        android:id="@+id/text_desc_lanche"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/abeezee"
+        android:maxLines="3"
+        android:text="@string/text_desc_item"
+        android:textAlignment="textStart"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@id/text_valor_lanche"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/text_nome_lanche" />
 
-        <TextView
-            android:id="@+id/text_valor_lanche"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/abeezee_italic"
-            android:text=" A partir de R$00,00"
-            android:textColor="@color/orange"
-            android:textSize="15dp"
-            app:layout_constraintBottom_toBottomOf="@id/view"
-            app:layout_constraintStart_toStartOf="@id/view"
-            app:layout_constraintTop_toBottomOf="@id/text_desc_lanche" />
+    <TextView
+        android:id="@+id/text_valor_lanche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text=" A partir de R$00,00"
+        android:textColor="@color/orange"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/text_desc_lanche" />
 
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view" />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
