@@ -37,7 +37,7 @@ class ProductListAdapter(
     }
 
     override fun onBindViewHolder(holder: ProductListAdapter.ProductViewHolder, position: Int) {
-        Picasso.get().load(productModelList[position].image).into(holder.imgBurger)
+        Picasso.get().load(productModelList[position].image?.url).into(holder.imgBurger)
         holder.txtBurgerName.text = productModelList[position].name
         holder.txtDesc.text = productModelList[position].desc
         holder.txtValor.text = productModelList[position].price

@@ -4,18 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FA4A0C">
+    android:background="#FA4A0C"
+    tools:context=".ui.MenuSuperiorActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/linear_profile_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageButton
+            android:id="@+id/btn_voltar"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_voltar"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linear_profile_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@id/linear_carrinho_menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_voltar"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView

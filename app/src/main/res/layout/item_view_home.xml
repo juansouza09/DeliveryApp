@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="150dp"
+    android:background="@color/color_bg"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ImageView
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@color/color_bg"
-        android:padding="10dp">
-
-        <ImageView
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:background="@drawable/custom_view_home"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="140dp"
+        android:background="@drawable/custom_view_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/img_lanche"
@@ -83,4 +78,3 @@
             app:layout_constraintTop_toBottomOf="@id/view" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</com.google.android.material.card.MaterialCardView>

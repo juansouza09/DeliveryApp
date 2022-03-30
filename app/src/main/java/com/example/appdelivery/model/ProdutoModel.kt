@@ -8,7 +8,7 @@ class ProdutoModel {
     @SerializedName("description")
     var desc: String? = null
     @SerializedName("photoUrl")
-    var image : String? = null
+    var image : Image? = null
     var price: String? = null
 }
 

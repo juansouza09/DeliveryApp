@@ -22,6 +22,7 @@ class CombosFragment : Fragment() {
     var mainViewModel: MainViewModel? = null
     var recyclerview : RecyclerView? = null
     var adapter : ProductListAdapter? = null
+    var layoutManager: LinearLayoutManager? =  null
     var binding: FragmentComboBinding? = null
 
     override fun onCreateView(
@@ -37,15 +38,16 @@ class CombosFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         recyclerview = binding?.recyclerCombosFragment
         recyclerview!!.setHasFixedSize(true)
-        recyclerview!!.layoutManager = LinearLayoutManager(this.requireContext())
-        recyclerview!!.adapter = adapter
+        layoutManager = LinearLayoutManager(this.requireContext(), RecyclerView.VERTICAL, false)
+        recyclerview!!.layoutManager = layoutManager
 
         mainViewModel!!.products.observe(requireActivity()){productModels ->
             Log.e("Main", "ProductList: " + productModels.firstOrNull()?.name)
 
         }
+        recyclerview!!.adapter = adapter
+
     }
 }
