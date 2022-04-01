@@ -10,10 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.appdelivery.R
-import com.example.appdelivery.adapter.ProductListAdapter
 import com.example.appdelivery.adapter.ProductListFavoAdapter
-import com.example.appdelivery.databinding.FragmentComboBinding
 import com.example.appdelivery.databinding.FragmentFavoritosBinding
 import com.example.appdelivery.domain.viewModel.MainViewModel
 

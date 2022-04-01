@@ -9,10 +9,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.appdelivery.R
 import com.example.appdelivery.adapter.ProductListAdapter
 import com.example.appdelivery.databinding.FragmentBebidasBinding
-import com.example.appdelivery.databinding.FragmentBurgersBinding
 import com.example.appdelivery.domain.viewModel.MainViewModel
 
 class BebidasFragment : Fragment() {

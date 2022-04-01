@@ -11,12 +11,9 @@ import com.example.appdelivery.data.repositories.MainRepoImpl
 import com.example.appdelivery.model.ProdutoModel
 import kotlinx.coroutines.launch
 
-class MainViewModel(
-) : ViewModel() {
+class MainViewModel: ViewModel() {
     private val _products = MutableLiveData<List<ProdutoModel>>()
     val products: LiveData<List<ProdutoModel>> get() = _products
-//    val getCatList: MutableLiveData<MutableList<ProdutoModel>>
-//        get() = mainRepo.getCatModelLiveData
 
     init {
         val service = Common.getAPIService

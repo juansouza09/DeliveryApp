@@ -17,12 +17,11 @@ class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
 
         binding.bntLogin.setOnClickListener {
-            //inflater.inflate(R.layout.activity_principal, container, false)
-            this.activity?.startActivity(Intent(this.context, HomeActivity::class.java))
+            startActivity(Intent(this.context, HomeActivity::class.java))
         }
 
         return binding.root

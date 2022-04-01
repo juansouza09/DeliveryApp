@@ -10,9 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.appdelivery.R
 import com.example.appdelivery.adapter.ProductListAdapter
-import com.example.appdelivery.databinding.FragmentComboBinding
 import com.example.appdelivery.databinding.FragmentHistoricoBinding
 import com.example.appdelivery.domain.viewModel.MainViewModel
 import com.example.appdelivery.ui.HomeActivity

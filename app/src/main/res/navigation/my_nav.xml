@@ -40,7 +40,7 @@
         android:id="@+id/mainActivity"
         android:name="com.example.appdelivery.ui.MainActivity"
         android:label="activity_dashboard"
-        tools:layout="@layout/activity_dashboard" />
+        tools:layout="@layout/activity_main" />
     <activity
         android:id="@+id/loginActivity"
         android:name="com.example.appdelivery.ui.LoginActivity"

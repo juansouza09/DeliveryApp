@@ -1,7 +1,5 @@
 package com.example.appdelivery.model
 
-import com.google.gson.annotations.SerializedName
-
 class ProdutoModel {
     var id : Int = 0
     var name: String? = null

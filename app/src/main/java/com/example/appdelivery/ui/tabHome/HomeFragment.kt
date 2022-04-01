@@ -6,13 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.example.appdelivery.R
 import com.example.appdelivery.databinding.FragmentHomeBinding
-import com.example.appdelivery.databinding.FragmentMenuSuperiorBinding
-import com.example.appdelivery.domain.viewModel.MainViewModel
 import com.example.appdelivery.ui.CarrinhoActivity
-import com.example.appdelivery.ui.HomeActivity
 import com.example.appdelivery.ui.MenuSuperiorActivity
 import com.example.appdelivery.ui.tabHome.adapters.TabFragPageAdapter
 import com.google.android.material.tabs.TabLayoutMediator
@@ -52,6 +48,7 @@ class HomeFragment : Fragment() {
             when (menuItem.itemId) {
                 R.id.carrinho -> {
                     startActivity(Intent(requireContext(), CarrinhoActivity::class.java))
+                    onDestroyView()
                     true
                 }
                 else -> false
