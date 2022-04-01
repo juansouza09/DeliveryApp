@@ -49,7 +49,7 @@
         <entry key="app/src/main/res/layout/fragment_checkout_pagamento.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_combo.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_combos.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_favoritos.xml" value="0.33229166666666665" />
+        <entry key="app/src/main/res/layout/fragment_favoritos.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_historico.xml" value="0.33177083333333335" />
         <entry key="app/src/main/res/layout/fragment_historico_vazio.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.23425925925925925" />
@@ -68,7 +68,7 @@
         <entry key="app/src/main/res/layout/item_view_carrinho.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/item_view_detalhes.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_view_endereco.xml" value="0.33229166666666665" />
-        <entry key="app/src/main/res/layout/item_view_favorite.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/item_view_favorite.xml" value="0.67" />
         <entry key="app/src/main/res/layout/item_view_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_view_pesquisa.xml" value="0.3463541666666667" />
         <entry key="app/src/main/res/layout/tela_adicionar_endereco.xml" value="0.33229166666666665" />

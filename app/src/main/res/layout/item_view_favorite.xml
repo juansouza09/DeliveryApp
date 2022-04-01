@@ -1,81 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/card"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/color_bg">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:background="@drawable/custom_view_favorite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_lanche"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@id/text_nome_lanche"
+        app:srcCompat="@drawable/img_prato" />
+
+
+    <TextView
+        android:id="@+id/text_nome_lanche"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/color_bg"
-        android:padding="10dp">
-
-        <ImageView
-            android:id="@+id/view"
-            android:layout_width="200dp"
-            android:layout_height="300dp"
-            android:background="@drawable/custom_view_favorite"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/img_lanche"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            app:layout_constraintBottom_toTopOf="@id/text_valor_lanche"
-            app:layout_constraintEnd_toEndOf="@id/view"
-            app:layout_constraintStart_toStartOf="@+id/view"
-            app:layout_constraintTop_toBottomOf="@id/text_nome_lanche"
-            app:srcCompat="@drawable/img_prato" />
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Combo Lions"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@id/img_lanche"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/imageButton" />
 
 
-        <TextView
-            android:id="@+id/text_nome_lanche"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/abeezee_italic"
-            android:text="Combo Lions"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toTopOf="@id/img_lanche"
-            app:layout_constraintEnd_toEndOf="@id/view"
-            app:layout_constraintStart_toStartOf="@id/view"
-            app:layout_constraintTop_toTopOf="@id/view" />
+    <TextView
+        android:id="@+id/text_valor_lanche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text=" A partir de R$00,00"
+        android:textColor="@color/orange"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintStart_toStartOf="@id/view" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@id/text_nome_lanche"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/ic_heart"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <TextView
-            android:id="@+id/text_valor_lanche"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/abeezee_italic"
-            android:text=" A partir de R$00,00"
-            android:textColor="@color/orange"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="@id/view"
-            app:layout_constraintEnd_toEndOf="@id/view"
-            app:layout_constraintStart_toStartOf="@id/view" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:padding="10dp"
-            app:layout_constraintEnd_toEndOf="@+id/view"
-            app:layout_constraintStart_toEndOf="@+id/text_nome_lanche"
-            app:layout_constraintTop_toTopOf="@+id/view"
-            app:srcCompat="@drawable/ic_heart"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

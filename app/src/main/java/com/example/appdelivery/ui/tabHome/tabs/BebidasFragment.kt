@@ -18,9 +18,9 @@ import com.example.appdelivery.domain.viewModel.MainViewModel
 class BebidasFragment : Fragment() {
 
     var binding: FragmentBebidasBinding? = null
-    var recyclerView: RecyclerView? =  null
-    var adapter: ProductListAdapter? =  null
-    var layoutManager: LinearLayoutManager? =  null
+    var recyclerView: RecyclerView? = null
+    var adapter: ProductListAdapter? = null
+    var layoutManager: LinearLayoutManager? = null
     var mainViewModel: MainViewModel? = null
 
     override fun onCreateView(
@@ -35,17 +35,19 @@ class BebidasFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setRecyclerView()
+    }
 
+    private fun setRecyclerView() {
         recyclerView = binding?.recyclerBebidas
         recyclerView!!.setHasFixedSize(true)
         layoutManager = LinearLayoutManager(this.requireContext(), RecyclerView.VERTICAL, false)
         recyclerView!!.layoutManager = layoutManager
 
-        mainViewModel!!.products.observe(requireActivity()){productModels ->
+        mainViewModel!!.products.observe(requireActivity()) { productModels ->
             Log.e("Main", "ProductList: " + productModels.firstOrNull()?.name)
             adapter = ProductListAdapter(requireContext(), productModels)
             recyclerView!!.adapter = adapter
         }
-
     }
 }

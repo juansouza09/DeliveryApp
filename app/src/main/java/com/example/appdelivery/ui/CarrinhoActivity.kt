@@ -17,6 +17,7 @@ class CarrinhoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_carrinho_vazio)
+        newBuy()
         toBack()
     }
 
@@ -24,6 +25,14 @@ class CarrinhoActivity : AppCompatActivity() {
         val btn = findViewById<ImageButton>(R.id.btn_back_carrinho)
         val intent = Intent(this, HomeActivity::class.java)
         btn.setOnClickListener {
+            startActivity(intent)
+        }
+    }
+
+    private fun newBuy() {
+        val btnBuy = findViewById<ImageButton>(R.id.bnt_login)
+        val intent = Intent(this, HomeActivity::class.java)
+        btnBuy.setOnClickListener {
             startActivity(intent)
         }
     }

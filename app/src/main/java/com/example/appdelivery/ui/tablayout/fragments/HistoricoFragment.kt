@@ -1,19 +1,63 @@
 package com.example.appdelivery.ui.tablayout.fragments
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.appdelivery.R
+import com.example.appdelivery.adapter.ProductListAdapter
+import com.example.appdelivery.databinding.FragmentComboBinding
+import com.example.appdelivery.databinding.FragmentHistoricoBinding
+import com.example.appdelivery.domain.viewModel.MainViewModel
+import com.example.appdelivery.ui.HomeActivity
 
 class HistoricoFragment : Fragment() {
+
+
+    var mainViewModel: MainViewModel? = null
+    var recyclerview: RecyclerView? = null
+    var adapter: ProductListAdapter? = null
+    var layoutManager: LinearLayoutManager? = null
+    var binding: FragmentHistoricoBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_historico, container, false)
+
+        binding = FragmentHistoricoBinding.inflate(inflater, container, false)
+        mainViewModel = ViewModelProvider(this.requireActivity())[MainViewModel::class.java]
+        return binding?.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setRecyclerView()
+        newBuy()
+    }
+
+    private fun setRecyclerView() {
+        recyclerview = binding?.recyclerHistoric
+        recyclerview!!.setHasFixedSize(true)
+        layoutManager = LinearLayoutManager(this.requireContext(), RecyclerView.VERTICAL, false)
+        recyclerview!!.layoutManager = layoutManager
+
+        mainViewModel!!.products.observe(requireActivity()) { productModels ->
+            Log.e("Main", "ProductList: " + productModels.firstOrNull()?.name)
+            adapter = ProductListAdapter(requireContext(), productModels)
+            recyclerview!!.adapter = adapter
+        }
+    }
+
+    private fun newBuy() {
+        binding?.bntLogin?.setOnClickListener {
+            startActivity(Intent(requireContext(), HomeActivity::class.java))
+        }
     }
 }
