@@ -1,4 +1,4 @@
-package com.example.appdelivery.domain.viewModel
+package com.example.appdelivery.domain
 
 import android.util.Log
 import androidx.lifecycle.LiveData

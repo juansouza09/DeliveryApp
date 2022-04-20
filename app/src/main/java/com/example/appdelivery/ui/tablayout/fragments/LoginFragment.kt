@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.appdelivery.databinding.FragmentLoginBinding
 import com.example.appdelivery.ui.HomeActivity
 
@@ -21,7 +22,7 @@ class LoginFragment : Fragment() {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
 
         binding.bntLogin.setOnClickListener {
-            startActivity(Intent(this.context, HomeActivity::class.java))
+            startActivity(Intent(requireContext(), HomeActivity::class.java))
         }
 
         return binding.root

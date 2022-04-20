@@ -48,7 +48,6 @@ class HomeFragment : Fragment() {
             when (menuItem.itemId) {
                 R.id.carrinho -> {
                     startActivity(Intent(requireContext(), CarrinhoActivity::class.java))
-                    onDestroyView()
                     true
                 }
                 else -> false

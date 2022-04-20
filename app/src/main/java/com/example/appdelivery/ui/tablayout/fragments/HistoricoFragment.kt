@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appdelivery.adapter.ProductListAdapter
 import com.example.appdelivery.databinding.FragmentHistoricoBinding
-import com.example.appdelivery.domain.viewModel.MainViewModel
+import com.example.appdelivery.domain.MainViewModel
 import com.example.appdelivery.ui.HomeActivity
 
 class HistoricoFragment : Fragment() {

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appdelivery.adapter.ProductListFavoAdapter
 import com.example.appdelivery.databinding.FragmentFavoritosBinding
-import com.example.appdelivery.domain.viewModel.MainViewModel
+import com.example.appdelivery.domain.MainViewModel
 
 class FavoritosFragment : Fragment() {
 

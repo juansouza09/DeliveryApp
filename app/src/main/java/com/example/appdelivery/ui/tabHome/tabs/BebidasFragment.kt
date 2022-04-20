@@ -1,5 +1,6 @@
 package com.example.appdelivery.ui.tabHome.tabs
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -11,7 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appdelivery.adapter.ProductListAdapter
 import com.example.appdelivery.databinding.FragmentBebidasBinding
-import com.example.appdelivery.domain.viewModel.MainViewModel
+import com.example.appdelivery.domain.MainViewModel
+import com.example.appdelivery.ui.DetalhesActivity
 
 class BebidasFragment : Fragment() {
 
@@ -25,7 +27,6 @@ class BebidasFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         binding = FragmentBebidasBinding.inflate(inflater, container, false)
         mainViewModel = ViewModelProvider(this.requireActivity())[MainViewModel::class.java]
         return binding?.root
@@ -46,6 +47,13 @@ class BebidasFragment : Fragment() {
             Log.e("Main", "ProductList: " + productModels.firstOrNull()?.name)
             adapter = ProductListAdapter(requireContext(), productModels)
             recyclerView!!.adapter = adapter
+            adapter!!.setOnItemClickListener(object : ProductListAdapter.onItemClickListener {
+                override fun onItemClick(position: Int) {
+                    val detalhesItem = Intent(requireContext(), DetalhesActivity::class.java)
+
+                    startActivity(detalhesItem)
+                }
+            })
         }
     }
 }

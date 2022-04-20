@@ -15,25 +15,20 @@ class ProductListAdapter(
     var context: Context,
     var productModelList: List<ProdutoModel>
 ): RecyclerView.Adapter<ProductListAdapter.ProductViewHolder>() {
-    inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
-        var imgBurger: ImageView
-        var txtBurgerName: TextView
-        var txtDesc: TextView
-        var txtValor: TextView
+    private lateinit var mListener : onItemClickListener
 
-        init {
-            imgBurger = itemView.findViewById(R.id.img_lanche)
-            txtBurgerName = itemView.findViewById(R.id.text_nome_lanche)
-            txtDesc = itemView.findViewById(R.id.text_desc_lanche)
-            txtValor = itemView.findViewById(R.id.text_valor_lanche)
-        }
+    interface onItemClickListener{
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(listener: onItemClickListener){
+        mListener = listener
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductListAdapter.ProductViewHolder {
-        return ProductViewHolder(
-            LayoutInflater.from(context).inflate(R.layout.item_view_home, parent, false)
-        )
+        val itemView = LayoutInflater.from(context).inflate(R.layout.item_view_home, parent, false)
+        return ProductViewHolder(itemView, mListener)
     }
 
     override fun onBindViewHolder(holder: ProductListAdapter.ProductViewHolder, position: Int) {
@@ -45,5 +40,25 @@ class ProductListAdapter(
 
     override fun getItemCount(): Int {
         return productModelList.size
+    }
+
+
+    class ProductViewHolder(itemView: View, listener: onItemClickListener) : RecyclerView.ViewHolder(itemView){
+
+        var imgBurger: ImageView
+        var txtBurgerName: TextView
+        var txtDesc: TextView
+        var txtValor: TextView
+
+
+        init {
+            imgBurger = itemView.findViewById(R.id.img_lanche)
+            txtBurgerName = itemView.findViewById(R.id.text_nome_lanche)
+            txtDesc = itemView.findViewById(R.id.text_desc_lanche)
+            txtValor = itemView.findViewById(R.id.text_valor_lanche)
+            itemView.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
+        }
     }
 }

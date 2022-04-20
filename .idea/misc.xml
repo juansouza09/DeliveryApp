@@ -42,7 +42,7 @@
         <entry key="app/src/main/res/layout/fragment_adicionar_endereco.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/fragment_bebidas.xml" value="0.33229166666666665" />
         <entry key="app/src/main/res/layout/fragment_burgers.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_cadastro.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_cadastro.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_carrinho.xml" value="0.33177083333333335" />
         <entry key="app/src/main/res/layout/fragment_carrinho_vazio.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_checkout_entrega.xml" value="0.22" />
