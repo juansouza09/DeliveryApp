@@ -9,41 +9,22 @@
         android:name="com.example.appdelivery.ui.tabHome.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_favoritosFragment"
-            app:destination="@id/favoritosFragment" />
     </fragment>
     <fragment
-        android:id="@+id/favoritosFragment"
+        android:id="@+id/favoriteFragment"
         android:name="com.example.appdelivery.ui.tablayout.fragments.FavoritosFragment"
         android:label="fragment_favoritos"
         tools:layout="@layout/fragment_favoritos" >
-        <action
-            android:id="@+id/action_favoritosFragment_to_perfilFragment"
-            app:destination="@id/perfilFragment" />
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
         android:name="com.example.appdelivery.ui.tablayout.fragments.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" >
-        <action
-            android:id="@+id/action_perfilFragment_to_historicoFragment"
-            app:destination="@id/historicoFragment" />
     </fragment>
     <fragment
-        android:id="@+id/historicoFragment"
+        android:id="@+id/historicFragment"
         android:name="com.example.appdelivery.ui.tablayout.fragments.HistoricoFragment"
         android:label="fragment_historico"
         tools:layout="@layout/fragment_historico" />
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.appdelivery.ui.MainActivity"
-        android:label="activity_dashboard"
-        tools:layout="@layout/activity_main" />
-    <activity
-        android:id="@+id/loginActivity"
-        android:name="com.example.appdelivery.ui.LoginActivity"
-        android:label="activity_login_and_cadastro"
-        tools:layout="@layout/activity_login_and_cadastro" />
 </navigation>

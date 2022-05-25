@@ -20,4 +20,3 @@ class MainRepoImpl(
 interface MainRepo {
     suspend fun getProducts(): List<ProdutoModel>
 }
-
